@@ -4,14 +4,7 @@ from app.code.email_sender import send_email
 from django.contrib import messages
 
 def main_page(request):
-    # return render(request, 'app/main.html')
-    return render(request, 'profile.html') 
-
-
-def back(request):
-    # return render(request, 'app/main.html')
-    return render(request, 'back.html') 
-     
+    return render(request, 'app/main.html')
 
 def login(request):
     if request.method == "POST":
