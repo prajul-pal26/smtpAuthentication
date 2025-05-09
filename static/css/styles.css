@@ -1,0 +1,96 @@
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .navbar {
+    background: linear-gradient(45deg, #1e1e1e, #3c3c3c, #212121);
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s ease infinite;
+    position: relative;
+    z-index: 1;
+  }
+
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .navbar .content {
+    max-width: 7xl;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+  }
+  /* company logo */
+  .navbar .logo a {
+    font-size: 1rem;
+    color: rgb(186, 179, 179);
+    font-weight:lighter;
+  }
+  /* navbar contetnt */
+  .navbar .links a {
+    color: white;
+    margin: 0 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .navbar .links a:hover {
+    color: #f5adad;
+  }
+
+  /* login button */
+  .navbar .login a {
+    background-color: #3DD1E7;
+    border: 0 solid #E5E7EB;
+    box-sizing: border-box;
+    color: #000000;
+    display: flex;
+    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 800;
+    justify-content: center;
+    line-height: 1.75rem;
+    padding: .75rem 1.65rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none #000000 solid;
+    text-decoration-thickness: auto;
+    width: 100%;
+    max-width: 460px;
+    position: relative;
+    cursor: pointer;
+    transform: rotate(-2deg);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+/* Hover Effect - Glow, Scale, and New Gradient */
+.navbar .login a:focus{
+  outline: 30;
+}
+
+/* Animated Glow Effect */
+.navbar .login a::after {
+  content: '';
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+/* Show Glow on Hover */
+.navbar .login a:hover::after {
+  bottom: 2px;
+  left: 2px;
+}
+
