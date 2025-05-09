@@ -13,8 +13,10 @@ ALLOWED_HOSTS = [
     'db',
     'localhost',
     '127.0.0.1',
-    'project-hkj0.onrender.com',
-    'www.cotgen.com'
+    # 'project-hkj0.onrender.com',
+    'www.cotgen.com',
+    'smtpauthentication.onrender.com',  # <-- add this line
+
 ]
 
 INSTALLED_APPS = [
