@@ -48,3 +48,8 @@ Case.objects.filter(id='1')
 
 [4] - delete
 Case.objects.get(id='1').delete()
+
+
+
+# production link 
+"https://smtpauthentication.onrender.com"
